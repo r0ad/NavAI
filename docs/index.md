@@ -3,23 +3,25 @@
 layout: home
 
 hero:
-  name: "NavAI "
-  text: "快速开始用起来AI"
-  tagline: My great project tagline
+  name: "NavAI"
+  text: "让AI成为你的副驾"
+  tagline: 简单 快速 强大
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
-
+      text: 工具库
+      link: /tool
+    - theme: brand
+      text: 提示词
+      link: /promote
+    - theme: brand
+      text: 智能体
+      link: /agent
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 工具库
+    details: 目前流行AI工具的使用导航
+  - title: 提示词
+    details: 一个提示词包含所有
+  - title: 智能体
+    details: 打造自己的智能体
 ---
 
