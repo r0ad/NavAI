@@ -15,10 +15,10 @@ hero:
       link: /tool
     - theme: brand
       text: 提示词
-      link: /promote
+      link: /promote/
     - theme: brand
       text: 智能体
-      link: /agent
+      link: /agent/
 
 features:
   - icon: 📖
@@ -29,12 +29,12 @@ features:
   - title: 提示词
     details: 一个提示词包含所有
     icon: 💡
-    link: /promote
+    link: /promote/
     linkText: 点击更多
   - title: 智能体
     details: 打造自己的智能体
     icon: 🤖
-    link: /agent
+    link: /agent/
     linkText: 点击更多
 ---
 
