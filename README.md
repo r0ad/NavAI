@@ -12,3 +12,7 @@ pnpm dev
 # 打包项目
 pnpm build
 ```
+
+## 其他
+
+- 导航样式来自 [vitepress-nav-template](https://github.com/maomao1996/vitepress-nav-template)
