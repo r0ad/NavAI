@@ -41,6 +41,7 @@
     "vitepress": "^1.0.1",
     "vue": "^3.4.21"
   },
+  "packageManager": "pnpm@9.10.0",
   "prettier": "@femm/prettier",
   "lint-staged": {
     "*.{js,jsx,tsx,vue,css,scss,less,md,json}": [
