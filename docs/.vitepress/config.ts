@@ -71,9 +71,9 @@ export default defineConfig({
 
     comment: {
       repo: 'r0ad/NavAI',
-      repoId: 'R_kgDOJC09Jg',
+      repoId: 'R_kgDON2oMjA',
       category: 'Announcements',
-      categoryId: 'DIC_kwDOJC09Js4Cekn0',
+      categoryId: 'DIC_kwDON2oMjM4CmysS',
     },
   },
 
