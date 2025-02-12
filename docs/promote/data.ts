@@ -14,13 +14,36 @@ export const NAV_DATA: NavData[] = [
         icon: '/icons/deepseek.png',
         title: 'DeekSeek魔法',
         desc: '基于DS R1推理的正确打开方式',
-        link: '/promote/deepseek',
+        link: '/promote/deepseek/',
       },
       {
         icon: '/icons/deepseek.png',
+        title: '7个万能提示词公式',
+        desc: '推理模型不需要很详细的提示词，但不代表不需要提示词公式。',
+        link: '/promote/deepseek/7formula',
+      }
+    ],
+  },
+  {
+    title: 'DeepSeek',
+    items: [
+      {
+        icon: '/icons/deepseek.png',
         title: 'DeepSeek从入门到精通',
-        desc: '来自余梦珑博士后的教程',
-        link: '/file/DeepSeekMater.pdf',
+        desc: '来自清华余梦珑博士后的分享',
+        link: '/promote/deepseek/DeepSeekMater',
+      },
+      {
+        icon: '/icons/deepseek.png',
+        title: 'DeekSeek魔法',
+        desc: '基于DS R1推理的正确打开方式',
+        link: '/promote/deepseek/',
+      },
+      {
+        icon: '/icons/deepseek.png',
+        title: '7个万能提示词公式',
+        desc: '推理模型不需要很详细的提示词，但不代表不需要提示词公式。',
+        link: '/promote/deepseek/7formula',
       }
     ],
   },
