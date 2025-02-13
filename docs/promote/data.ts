@@ -21,6 +21,12 @@ export const NAV_DATA: NavData[] = [
         title: '7个万能提示词公式',
         desc: '推理模型不需要很详细的提示词，但不代表不需要提示词公式。',
         link: '/promote/deepseek/7formula',
+      },
+      {
+        icon: '/icons/deepseek.png',
+        title: '0经验掌握DeepSeek使用',
+        desc: '如何利用DeepSeek学会使用DeepSeek',
+        link: '/promote/deepseek/zero',
       }
     ],
   },
