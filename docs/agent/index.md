@@ -15,5 +15,5 @@ import { NAV_DATA } from './data'
 <br />
 
 ::: tip
-如有引用请保留出处 @ <https://github.com/r0ad/NavAI>
+⭐️ @ [NavAI](https://github.com/r0ad/NavAI)
 :::

@@ -41,8 +41,8 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/r0ad/NavAI' }],
 
     footer: {
-      message: '如有转载或 CV 的请标注本站原文地址',
-      copyright: 'Copyright © 2025-present r0ad',
+      message: '不断更新中🎇',
+      copyright: '© 2025-present r0ad',
     },
 
     lastUpdated: {

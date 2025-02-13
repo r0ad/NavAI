@@ -174,5 +174,22 @@ export const NAV_DATA: NavData[] = [
         link: 'https://tianyin.music.163.com/#/',
       }
     ],
+  },
+  {
+    title: '3D',
+    items: [
+      {
+        icon: '/icons/tripo.webp',
+        title: 'Tripo',
+        desc: '在线文生、图生3D模型',
+        link: 'https://www.tripo3d.ai/',
+      },
+      {
+        icon: '/icons/hunyuan.png',
+        title: '混元3D',
+        desc: '腾讯出品，在线文生、图生3D模型',
+        link: 'https://3d.hunyuan.tencent.com/',
+      }
+    ],
   }
 ]
