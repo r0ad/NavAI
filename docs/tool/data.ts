@@ -30,6 +30,35 @@ export const NAV_DATA: NavData[] = [
     ],
   },
   {
+    title: 'DeepSeek平替，分流平台',
+    items: [
+      {
+        icon: '/icons/yuanbao.png',
+        title: '腾讯元宝',
+        desc: '微信相关搜索增强+DeepSeek R1推理',
+        link: 'https://yuanbao.tencent.com/',
+      },
+      {
+        icon: '/icons/zhida.png',
+        title: '知乎直答',
+        desc: '知乎相关搜索增强+DeepSeek R1推理',
+        link: 'https://zhida.zhihu.com/',
+      },
+      {
+        icon: '/icons/nami.png',
+        title: '纳米搜索',
+        desc: 'DeepSeek R1的聊天能力，只有App支持',
+        link: 'https://www.n.cn/',
+      },
+      {
+        icon: '/icons/siliconflow.png',
+        title: '硅基流动',
+        desc: 'DeepSeek R1和V3的API接入平替',
+        link: 'https://cloud.siliconflow.cn/models',
+      }
+    ],
+  },
+  {
     title: '文本',
     items: [
       {
