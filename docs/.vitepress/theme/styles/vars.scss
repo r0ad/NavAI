@@ -7,6 +7,11 @@
  * Colors
  * -------------------------------------------------------------------------- */
 :root {
+  --vp-c-brand-1: #3498db;
+  --vp-c-brand-2: #2980b9;
+  --vp-c-brand-3: #1abc9c;
+  --vp-c-brand-soft: rgba(52, 152, 219, 0.16);
+
   --vp-c-gutter: var(--vp-c-divider);
   --vp-code-block-bg: rgba(125, 125, 125, 0.04);
   --vp-code-tab-divider: var(--vp-c-divider);
@@ -27,6 +32,10 @@
 .dark {
   --vp-code-block-bg: rgba(0, 0, 0, 0.2);
   --vp-c-text-code: #c0cec0;
+  --vp-c-brand-1: #5dade2;
+  --vp-c-brand-2: #3498db;
+  --vp-c-brand-3: #1abc9c;
+  --vp-c-brand-soft: rgba(93, 173, 226, 0.16);
 }
 
 /**
