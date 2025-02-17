@@ -7,7 +7,7 @@ hero:
   text: 让AI成为你的副驾
   tagline: 简单 快速 强大
   image:
-    src: /logo.png
+    src: /logo.webp
     alt: AI使用导航
   actions:
     - theme: brand
