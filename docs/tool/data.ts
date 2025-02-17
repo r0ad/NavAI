@@ -127,7 +127,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://yiyan.baidu.com/',
       },
       {
-        icon: '/icons/xinghuo.svg',
+        icon: '/icons/xinghuo.png',
         title: '星火讯飞',
         desc: '讯飞出品，走的比较前沿',
         link: 'https://xinghuo.xfyun.cn/',

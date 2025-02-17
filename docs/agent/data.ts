@@ -40,7 +40,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.langchain.com/langchain',
       },
       {
-        icon: '/icons/langgraph.svg',
+        icon: '/icons/langgraph.png',
         title: 'LangGraph',
         desc: '智能体编排开发框架,，支持Python\JS',
         link: 'https://www.langchain.com/langgraph',
@@ -75,7 +75,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.langchain.com/langchain',
       },
       {
-        icon: '/icons/langgraph.svg',
+        icon: '/icons/langgraph.png',
         title: 'LangGraph',
         desc: '智能体编排开发框架,，支持Python\JS',
         link: 'https://www.langchain.com/langgraph',
@@ -173,7 +173,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://bolt.new/',
       },
       {
-        icon: '/icons/openhands.svg',
+        icon: '/icons/openhands.png',
         title: 'OpenHands',
         desc: '一句话AI出应用，开源，Devin平替',
         link: 'https://all-hands.dev',
