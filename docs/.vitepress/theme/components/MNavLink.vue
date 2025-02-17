@@ -51,11 +51,21 @@ const svg = computed(() => {
   --m-nav-box-gap: 12px;
 
   display: block;
-  border: 1px solid var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   height: 100%;
   text-decoration: inherit;
-  background-color: var(--vp-c-bg-alt);
+  background-color: var(--vp-c-bg-soft);
+  box-shadow: var(--vp-shadow-1);
+  transition: all 0.25s;
+  &:hover {
+    box-shadow: var(--vp-shadow-3);
+    border-color: var(--vp-c-brand);
+    text-decoration: initial;
+    background-color: var(--vp-c-bg-soft-up);
+    transform: translateY(-2px);
+  }
+  background-color: var(--vp-c-bg);
   transition: all 0.25s;
   &:hover {
     box-shadow: var(--vp-shadow-2);
