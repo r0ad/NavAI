@@ -47,7 +47,7 @@ export const NAV_DATA: NavData[] = [
       {
         icon: '/icons/nami.png',
         title: '纳米搜索',
-        desc: 'DeepSeek R1的聊天能力，只有App支持',
+        desc: '全网信息+DeepSeek R1推理',
         link: 'https://www.n.cn/',
       },
       {
@@ -55,6 +55,36 @@ export const NAV_DATA: NavData[] = [
         title: '硅基流动',
         desc: 'DeepSeek R1和V3的API接入平替',
         link: 'https://cloud.siliconflow.cn/models',
+      }
+    ],
+  },
+  {
+    title: '搜索',
+    items: [
+      
+      {
+        icon: '/icons/meta.svg',
+        title: '秘塔AI搜索',
+        desc: '全网信息+DeepSeek R1推理，简洁、深入、研究三模式',
+        link: 'https://metaso.cn/',
+      },
+      {
+        icon: '/icons/nami.png',
+        title: '纳米搜索',
+        desc: '全网信息+DeepSeek R1推理',
+        link: 'https://www.n.cn/',
+      },
+      {
+        icon: '/icons/yuanbao.png',
+        title: '腾讯元宝',
+        desc: '微信相关搜索增强+DeepSeek R1推理',
+        link: 'https://yuanbao.tencent.com/',
+      },
+      {
+        icon: '/icons/zhida.png',
+        title: '知乎直答',
+        desc: '知乎相关搜索增强+DeepSeek R1推理',
+        link: 'https://zhida.zhihu.com/',
       }
     ],
   },

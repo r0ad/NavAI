@@ -48,7 +48,7 @@ export const NAV_DATA: NavData[] = [
     ],
   },
   {
-    title: '开源框架',
+    title: '智能体开发开源',
     items: [
       {
         icon: 'https://fastgpt.cn/logo.svg',
@@ -83,7 +83,30 @@ export const NAV_DATA: NavData[] = [
     ],
   },
   {
-    title: '商业',
+    title: '大模型微调开源',
+    items: [
+      {
+        icon: '/icons/unsloth.jpg',
+        title: 'unsloth',
+        desc: '开源+速度+低显存，支持DeepSeek R1',
+        link: 'https://github.com/unslothai/unsloth',
+      },
+      {
+        icon: '/icons/llamafactory.png',
+        title: 'LLaMA-Factory',
+        desc: '开源+多模型支持，各种显存都能跑',
+        link: 'https://github.com/hiyouga/LLaMA-Factory',
+      },
+      {
+        icon: '/icons/kiln.svg',
+        title: 'Kiln AI',
+        desc: '桌面端+生成合成数据+模型微调+开源',
+        link: 'https://github.com/Kiln-AI/Kiln',
+      },
+    ],
+  },
+  {
+    title: '智能体开发商业',
     items: [
       {
         icon: '/icons/coze.svg',
