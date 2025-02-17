@@ -132,7 +132,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.trae.ai/',
       },
       {
-        icon: '/icons/windsurf.svg',
+        icon: '/icons/windsurf.png',
         title: 'Windsurf',
         desc: 'AI编程工具，付费',
         link: 'https://codeium.com/windsurf',
@@ -161,7 +161,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://v0.dev/',
       },
       {
-        icon: '/icons/tongyi.svg',
+        icon: '/icons/tongyi.png',
         title: '通义灵码',
         desc: 'Cursor的替代，聊天+Composer的组合插件',
         link: 'https://lingma.aliyun.com/',

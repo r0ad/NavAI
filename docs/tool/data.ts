@@ -133,7 +133,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://xinghuo.xfyun.cn/',
       },
       {
-        icon: '/icons/tongyi.svg',
+        icon: '/icons/tongyi.png',
         title: '通义千问',
         desc: '阿里出品，综合能力强',
         link: 'https://tongyi.aliyun.com/qianwen/',
@@ -162,7 +162,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.doubao.com/chat/',
       },
       {
-        icon: '/icons/tongyi.svg',
+        icon: '/icons/tongyi.png',
         title: '通义万象',
         desc: '图片+视频全能',
         link: 'https://tongyi.aliyun.com/wanxiang/',
@@ -226,7 +226,7 @@ export const NAV_DATA: NavData[] = [
     title: '语音',
     items: [
       {
-        icon: '/icons/tongyi.svg',
+        icon: '/icons/tongyi.png',
         title: '通义听悟',
         desc: '语音理解能力强大',
         link: 'https://tingwu.aliyun.com/home',
