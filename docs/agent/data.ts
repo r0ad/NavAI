@@ -98,7 +98,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://github.com/hiyouga/LLaMA-Factory',
       },
       {
-        icon: '/icons/kiln.svg',
+        icon: '/icons/kiln.png',
         title: 'Kiln AI',
         desc: '桌面端+生成合成数据+模型微调+开源',
         link: 'https://github.com/Kiln-AI/Kiln',

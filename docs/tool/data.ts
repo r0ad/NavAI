@@ -51,6 +51,12 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.n.cn/',
       },
       {
+        icon: '/icons/meta.svg',
+        title: '秘塔AI搜索',
+        desc: '全网信息+DeepSeek R1推理，简洁、深入、研究三模式',
+        link: 'https://metaso.cn/',
+      },
+      {
         icon: '/icons/siliconflow.png',
         title: '硅基流动',
         desc: 'DeepSeek R1和V3的API接入平替',
@@ -61,7 +67,6 @@ export const NAV_DATA: NavData[] = [
   {
     title: '搜索',
     items: [
-      
       {
         icon: '/icons/meta.svg',
         title: '秘塔AI搜索',
