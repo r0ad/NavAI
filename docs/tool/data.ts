@@ -57,9 +57,21 @@ export const NAV_DATA: NavData[] = [
         link: 'https://metaso.cn/',
       },
       {
+        icon: 'https://www.baidu.com/favicon.ico',
+        title: '百度AI搜索',
+        desc: '百度搜索+DeepSeek R1推理',
+        link: 'https://chat.baidu.com',
+      },
+      {
+        icon: 'https://portal.volccdn.com/obj/volcfe/misc/favicon.png',
+        title: '火山引擎',
+        desc: '字节云计算+DeepSeek V3+R1推理，同价格',
+        link: 'https://www.volcengine.com/',
+      },
+      {
         icon: '/icons/siliconflow.png',
         title: '硅基流动',
-        desc: 'DeepSeek R1和V3的API接入平替',
+        desc: 'DeepSeek R1和V3的API接入平替，同价格',
         link: 'https://cloud.siliconflow.cn/models',
       }
     ],
