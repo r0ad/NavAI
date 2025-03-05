@@ -1,0 +1,101 @@
+/* 页面过渡动画 */
+
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+/* 内容区域过渡 */
+.VPContent {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* 卡片悬停效果 */
+.VPFeature,
+.VPTeamMember,
+.VPDoc .container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.VPFeature:hover,
+.VPTeamMember:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航链接过渡 */
+.VPNavBarMenuLink,
+.VPNavBarMenuGroup .button,
+.VPSidebarItem .link {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  position: relative;
+}
+
+.VPNavBarMenuLink::after,
+.VPNavBarMenuGroup .button::after,
+.VPSidebarItem .link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--vp-c-brand-1);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.VPNavBarMenuLink:hover::after,
+.VPNavBarMenuGroup .button:hover::after,
+.VPSidebarItem .link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* 按钮过渡 */
+.VPButton {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.VPButton:hover {
+  transform: translateY(-2px);
+}
+
+/* 图片悬停效果 */
+.VPImage {
+  transition: transform 0.3s ease;
+}
+
+.VPImage:hover {
+  transform: scale(1.05);
+}
+
+/* 主题切换动画 */
+.VPSwitch {
+  transition: background-color 0.3s ease;
+}
+
+/* 页面加载动画 */
+@keyframes pageLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPContent {
+  animation: pageLoad 0.5s ease-out forwards;
+}

@@ -1,0 +1,213 @@
+/* 通用页面样式 - 确保所有页面风格一致 */
+
+/* 页面容器 */
+.vp-doc {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* 标题样式 */
+.vp-doc h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--ai-gradient-1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.vp-doc h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--vp-c-text-1);
+}
+
+/* 段落样式 */
+.vp-doc p {
+  margin: 1rem 0;
+  line-height: 1.7;
+  color: var(--vp-c-text-1);
+}
+
+/* 列表样式 */
+.vp-doc ul,
+.vp-doc ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.vp-doc li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* 链接样式 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  transition: var(--ai-transition);
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration: underline;
+}
+
+/* 代码块样式 */
+.vp-doc pre,
+.vp-doc code {
+  border-radius: var(--ai-card-radius);
+}
+
+/* 表格样式 */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border-radius: var(--ai-card-radius);
+  overflow: hidden;
+  box-shadow: var(--ai-card-shadow);
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+  text-align: left;
+}
+
+.vp-doc tr:nth-child(even) {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* 引用样式 */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  padding: 0.75rem 1rem;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 0 var(--ai-card-radius) var(--ai-card-radius) 0;
+  margin: 1.5rem 0;
+  color: var(--vp-c-text-2);
+}
+
+/* 卡片网格布局 - 用于特性展示等 */
+.ai-features-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 640px) {
+  .ai-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .ai-features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.ai-feature-item {
+  background: var(--vp-c-bg);
+  padding: 1.5rem;
+  border-radius: var(--ai-card-radius);
+  box-shadow: var(--ai-card-shadow);
+  transition: var(--ai-transition);
+}
+
+.ai-feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.ai-feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ai-feature-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--vp-c-text-1);
+}
+
+.ai-feature-item p {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 0;
+}
+
+.ai-feature-item:nth-child(1) .ai-feature-icon {
+  color: var(--ai-accent-3);
+}
+
+.ai-feature-item:nth-child(2) .ai-feature-icon {
+  color: var(--vp-c-brand-1);
+}
+
+.ai-feature-item:nth-child(3) .ai-feature-icon {
+  color: var(--ai-accent-2);
+}
+
+.ai-feature-item:nth-child(4) .ai-feature-icon {
+  color: var(--ai-accent-1);
+}
+
+/* 按钮样式 */
+.ai-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: var(--ai-transition);
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+.ai-button.primary {
+  background: var(--ai-gradient-1);
+  color: white;
+  border: none;
+}
+
+.ai-button.secondary {
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  border: 1px solid var(--vp-c-divider);
+}
+
+.ai-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 页面内容区域背景 */
+.vp-doc {
+  background-image: radial-gradient(circle at 10% 20%, rgba(52, 152, 219, 0.03) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(155, 89, 182, 0.03) 0%, transparent 20%);
+}
+
+.dark .vp-doc {
+  background-image: radial-gradient(circle at 10% 20%, rgba(93, 173, 226, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(187, 143, 206, 0.05) 0%, transparent 20%);
+}

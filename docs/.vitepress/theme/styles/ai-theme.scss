@@ -1,0 +1,150 @@
+/* AI导航主题样式 */
+
+:root {
+  /* 主色调 - 科技蓝色系 */
+  --vp-c-brand-1: #3498db;
+  --vp-c-brand-2: #2980b9;
+  --vp-c-brand-3: #1abc9c;
+  --vp-c-brand-soft: rgba(52, 152, 219, 0.16);
+  --vp-c-brand-next: #16a085;
+
+  /* AI主题特有颜色 */
+  --ai-accent-1: #9b59b6; /* 紫色 - 智能体 */
+  --ai-accent-2: #e74c3c; /* 红色 - 提示词 */
+  --ai-accent-3: #f39c12; /* 橙色 - 工具库 */
+  --ai-gradient-1: linear-gradient(120deg, var(--vp-c-brand-1), var(--ai-accent-1));
+  --ai-gradient-2: linear-gradient(120deg, var(--ai-accent-3), var(--ai-accent-2));
+
+  /* 背景和文本 */
+  --ai-bg-soft: rgba(240, 248, 255, 0.5);
+  --ai-text-primary: #2c3e50;
+  --ai-text-secondary: #7f8c8d;
+
+  /* 组件样式 */
+  --ai-card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --ai-card-radius: 12px;
+  --ai-transition: all 0.3s ease;
+
+  /* 主页英雄区域 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    var(--vp-c-brand-1) 30%,
+    var(--ai-accent-1)
+  );
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    var(--vp-c-brand-1) 30%,
+    var(--ai-accent-1) 70%
+  );
+  --vp-home-hero-image-filter: blur(60px);
+}
+
+/* 深色模式 */
+.dark {
+  --vp-c-brand-1: #5dade2;
+  --vp-c-brand-2: #3498db;
+  --vp-c-brand-3: #1abc9c;
+  --vp-c-brand-soft: rgba(93, 173, 226, 0.16);
+
+  /* AI主题特有颜色-深色模式 */
+  --ai-accent-1: #bb8fce; /* 紫色 - 智能体 */
+  --ai-accent-2: #ec7063; /* 红色 - 提示词 */
+  --ai-accent-3: #f5b041; /* 橙色 - 工具库 */
+
+  /* 背景和文本-深色模式 */
+  --ai-bg-soft: rgba(30, 41, 59, 0.5);
+  --ai-text-primary: #ecf0f1;
+  --ai-text-secondary: #bdc3c7;
+}
+
+/* 特性卡片样式 */
+.VPFeature {
+  transition: var(--ai-transition);
+  border-radius: var(--ai-card-radius);
+  box-shadow: var(--ai-card-shadow);
+  overflow: hidden;
+}
+
+.VPFeature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* 工具库卡片 */
+.VPFeature:nth-child(1) {
+  border-top: 3px solid var(--ai-accent-3);
+}
+
+/* 提示词卡片 */
+.VPFeature:nth-child(2) {
+  border-top: 3px solid var(--ai-accent-2);
+}
+
+/* 智能体卡片 */
+.VPFeature:nth-child(3) {
+  border-top: 3px solid var(--ai-accent-1);
+}
+
+/* 按钮样式 */
+.VPButton {
+  border-radius: 8px;
+  transition: var(--ai-transition);
+}
+
+.VPButton.brand {
+  background: var(--ai-gradient-1);
+  border: none;
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* 导航栏样式 */
+.VPNav {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dark .VPNav {
+  background-color: rgba(30, 41, 59, 0.8);
+}
+
+/* Logo动画 */
+.VPNavBarTitle .logo {
+  transition: var(--ai-transition);
+}
+
+.VPNavBarTitle:hover .logo {
+  transform: rotate(15deg);
+}
+
+/* 自定义动画 */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.VPHero .image-src {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* 主页内容区域 */
+.VPHome {
+  background-image: radial-gradient(circle at 10% 20%, rgba(52, 152, 219, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(155, 89, 182, 0.05) 0%, transparent 20%);
+}
+
+.dark .VPHome {
+  background-image: radial-gradient(circle at 10% 20%, rgba(93, 173, 226, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(187, 143, 206, 0.1) 0%, transparent 20%);
+}

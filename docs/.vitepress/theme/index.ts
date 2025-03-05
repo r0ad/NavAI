@@ -6,6 +6,14 @@ import { createMediumZoomProvider } from './composables/useMediumZoom'
 
 import MLayout from './components/MLayout.vue'
 import MNavLinks from './components/MNavLinks.vue'
+import AIHome from './components/AIHome.vue'
+import AINavCard from './components/AINavCard.vue'
+import AINavGrid from './components/AINavGrid.vue'
+import AILatestUpdates from './components/AILatestUpdates.vue'
+import AISearch from './components/AISearch.vue'
+import AIPageLayout from './components/AIPageLayout.vue'
+import AICard from './components/AICard.vue'
+import AIGrid from './components/AIGrid.vue'
 
 import './styles/index.scss'
 
@@ -16,11 +24,16 @@ export default {
   Layout: () => {
     const props: Record<string, any> = {}
     // 获取 frontmatter
-    const { frontmatter } = useData()
+    const { frontmatter, page } = useData()
 
     /* 添加自定义 class */
     if (frontmatter.value?.layoutClass) {
       props.class = frontmatter.value.layoutClass
+    }
+
+    // 如果是首页，使用自定义首页组件
+    if (page.value.relativePath === 'index.md') {
+      return h(AIHome)
     }
 
     return h(MLayout, props)
@@ -31,6 +44,13 @@ export default {
     app.provide('DEV', process.env.NODE_ENV === 'development')
 
     app.component('MNavLinks', MNavLinks)
+    app.component('AINavCard', AINavCard)
+    app.component('AINavGrid', AINavGrid)
+    app.component('AILatestUpdates', AILatestUpdates)
+    app.component('AISearch', AISearch)
+    app.component('AIPageLayout', AIPageLayout)
+    app.component('AICard', AICard)
+    app.component('AIGrid', AIGrid)
 
     if (typeof window !== 'undefined') {
       watch(
