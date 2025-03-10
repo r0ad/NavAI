@@ -1,13 +1,16 @@
 <template>
   <div class="ai-card" :class="{ 'ai-card-hover': hover }">
-    <div v-if="icon" class="ai-card-icon" :style="{ color: iconColor }">
-      {{ icon }}
+    <div class="ai-card-header">
+      <div v-if="icon" class="ai-card-icon" :style="{ color: iconColor }">
+        <img v-if="icon.startsWith('http') || icon.startsWith('/')" :src="icon" :alt="title" />
+        <span v-else>{{ icon }}</span>
+      </div>
+      <h3 v-if="title" class="ai-card-title">{{ title }}</h3>
     </div>
     <div v-if="image" class="ai-card-image">
       <img :src="image" :alt="title" />
     </div>
     <div class="ai-card-content">
-      <h3 v-if="title" class="ai-card-title">{{ title }}</h3>
       <p v-if="description" class="ai-card-description">{{ description }}</p>
       <slot></slot>
       <div v-if="link" class="ai-card-link">
@@ -74,9 +77,34 @@ defineProps({
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.ai-card-icon {
-  font-size: 2.5rem;
+.ai-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.ai-card-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ai-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--vp-c-text-1);
 }
 
 .ai-card-image {
@@ -102,17 +130,10 @@ defineProps({
   flex-direction: column;
 }
 
-.ai-card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: var(--vp-c-text-1);
-}
-
 .ai-card-description {
   font-size: 0.95rem;
   color: var(--vp-c-text-2);
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
   line-height: 1.6;
 }
 

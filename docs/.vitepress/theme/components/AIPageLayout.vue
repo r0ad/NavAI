@@ -108,6 +108,9 @@ const next = computed(() => {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+  padding: 0 1rem;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
 .ai-page-content {

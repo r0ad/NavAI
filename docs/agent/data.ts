@@ -5,6 +5,11 @@ type NavData = {
   items: NavLink[]
 }
 
+export const PAGE_META = {
+  title: 'AI 智能体',
+  description: '学习如何构建和定制你自己的 AI 智能体，实现自动化任务处理，提升工作效率和创新能力'
+}
+
 export const NAV_DATA: NavData[] = [
   {
     title: '最常用',

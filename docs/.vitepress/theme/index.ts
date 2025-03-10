@@ -14,6 +14,7 @@ import AISearch from './components/AISearch.vue'
 import AIPageLayout from './components/AIPageLayout.vue'
 import AICard from './components/AICard.vue'
 import AIGrid from './components/AIGrid.vue'
+import AINavSection from './components/AINavSection.vue'
 
 import './styles/index.scss'
 
@@ -51,6 +52,7 @@ export default {
     app.component('AIPageLayout', AIPageLayout)
     app.component('AICard', AICard)
     app.component('AIGrid', AIGrid)
+    app.component('AINavSection', AINavSection)
 
     if (typeof window !== 'undefined') {
       watch(
