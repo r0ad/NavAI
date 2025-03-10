@@ -12,6 +12,16 @@ import { NAV_DATA, PAGE_META } from './data'
 
 {{ PAGE_META.description }}
 
+## 热门
+
+<template v-for="section in NAV_DATA" :key="section.title">
+  <AINavSection
+    :title="section.title"
+    :items="section.items"
+    :columns="3"
+  />
+</template>
+
 ## 智能体基础
 
 <div class="ai-info-box">
@@ -24,16 +34,6 @@ import { NAV_DATA, PAGE_META } from './data'
     <li><strong>社交性</strong>：能够与其他智能体或人类进行交互和协作</li>
   </ul>
 </div>
-
-## 热门
-
-<template v-for="section in NAV_DATA" :key="section.title">
-  <AINavSection
-    :title="section.title"
-    :items="section.items"
-    :columns="3"
-  />
-</template>
 
 ## 智能体类型
 
