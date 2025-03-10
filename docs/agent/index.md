@@ -35,35 +35,6 @@ import { NAV_DATA, PAGE_META } from './data'
   </ul>
 </div>
 
-## 智能体类型
-
-<AIGrid columns="3">
-  <AICard
-    title="任务型智能体"
-    description="专注于完成特定任务的智能体，如数据分析、内容生成、信息检索等"
-    icon="📋"
-    iconColor="var(--ai-accent-3)"
-    link="/agent/task"
-    linkText="查看详情"
-  />
-  <AICard
-    title="对话型智能体"
-    description="专注于与人类进行自然对话的智能体，如客服助手、聊天机器人等"
-    icon="💬"
-    iconColor="var(--vp-c-brand-1)"
-    link="/agent/conversation"
-    linkText="查看详情"
-  />
-  <AICard
-    title="创意型智能体"
-    description="专注于创意工作的智能体，如设计助手、创意写作、音乐创作等"
-    icon="🎨"
-    iconColor="var(--ai-accent-2)"
-    link="/agent/creative"
-    linkText="查看详情"
-  />
-</AIGrid>
-
 ## 构建智能体
 
 <div class="ai-steps">
