@@ -17,6 +17,8 @@ import AIGrid from './components/AIGrid.vue'
 import AINavSection from './components/AINavSection.vue'
 
 import './styles/index.scss'
+import './style.css'
+import './styles/nav.css'
 
 let homePageStyle: HTMLStyleElement | undefined
 

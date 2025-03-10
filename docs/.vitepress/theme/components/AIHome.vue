@@ -35,9 +35,9 @@
       <AISearch />
     </div> -->
 
-    <div class="ai-features">
+    <!-- <div class="ai-features">
       <AINavGrid />
-    </div>
+    </div> -->
 
     <div class="ai-why-section">
       <div class="ai-introduction">
@@ -105,6 +105,10 @@ const { frontmatter } = useData()
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .ai-hero {
@@ -112,8 +116,10 @@ const { frontmatter } = useData()
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 4rem 0;
+  padding: 2rem 0;
   position: relative;
+  height: 40vh;
+  min-height: 300px;
 }
 
 .ai-hero-content {
@@ -121,10 +127,11 @@ const { frontmatter } = useData()
 }
 
 .ai-hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
 }
 
 .ai-hero-name {
@@ -133,18 +140,27 @@ const { frontmatter } = useData()
   background-clip: text;
   color: var(--vp-home-hero-name-color);
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
 .ai-hero-text {
   display: block;
   color: var(--vp-c-text-1);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards 0.2s;
 }
 
 .ai-hero-tagline {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   color: var(--vp-c-text-2);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards 0.4s;
 }
 
 .ai-hero-actions {
@@ -180,9 +196,9 @@ const { frontmatter } = useData()
 
 .ai-hero-image {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .ai-hero-image-src {
@@ -211,18 +227,24 @@ const { frontmatter } = useData()
 }
 
 .ai-features {
-  padding: 2rem 0 4rem;
+  padding: 2rem 0;
+  margin: 1rem 0;
 }
 
 .ai-why-section {
-  margin: 2rem 0;
+  margin: 1rem 0;
+  flex: 1;
 }
 
 .ai-introduction {
-  padding: 3rem 1.5rem;
-  margin: 2rem 0;
-  background: var(--ai-bg-soft);
-  border-radius: var(--ai-card-radius);
+  padding: 2rem;
+  margin: 1rem 0;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .ai-introduction-content {
@@ -231,9 +253,9 @@ const { frontmatter } = useData()
 }
 
 .ai-introduction-content h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
   background: var(--ai-gradient-1);
   -webkit-background-clip: text;
   background-clip: text;
@@ -242,9 +264,9 @@ const { frontmatter } = useData()
 }
 
 .ai-introduction-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
   color: var(--ai-text-primary);
 }
 
@@ -283,15 +305,16 @@ const { frontmatter } = useData()
 }
 
 .ai-footer {
-  padding: 2rem 0;
-  border-top: 1px solid var(--vp-c-divider);
-  margin-top: 4rem;
+  padding: 1.5rem 0;
+  margin-top: 1rem;
 }
 
 .ai-footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .ai-footer-links {
@@ -310,28 +333,33 @@ const { frontmatter } = useData()
 
 @media (min-width: 640px) {
   .ai-hero {
-    padding: 6rem 0;
-  }
-
-  .ai-hero-title {
-    font-size: 3rem;
-  }
-
-  .ai-hero-image {
-    max-width: 400px;
+    padding: 3rem 0;
+    height: 45vh;
   }
 }
 
 @media (min-width: 960px) {
+  .ai-home {
+    height: 100vh;
+    padding: 1rem 1.5rem;
+  }
+
   .ai-hero {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-    padding: 8rem 0;
+    padding: 2rem 0;
+    gap: 2rem;
+    height: 40vh;
   }
 
   .ai-hero-content {
     max-width: 50%;
+  }
+
+  .ai-hero-tagline {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .ai-hero-actions {
@@ -340,6 +368,19 @@ const { frontmatter } = useData()
 
   .ai-hero-image {
     margin-top: 0;
+    max-width: 35%;
+  }
+
+  .ai-features {
+    padding: 1.5rem 0;
+  }
+
+  .ai-introduction {
+    padding: 2rem;
+  }
+
+  .ai-footer {
+    padding: 1rem 0;
   }
 }
 
@@ -354,5 +395,98 @@ const { frontmatter } = useData()
   100% {
     transform: translateY(0px);
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-hero-name,
+  .ai-hero-text,
+  .ai-hero-tagline,
+  .ai-introduction,
+  .ai-hero-image-src {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 统一的卡片和操作样式 */
+.ai-card-base {
+  background: var(--ai-bg-soft);
+  border-radius: var(--ai-card-radius);
+  transition: var(--ai-transition);
+}
+
+.ai-action-base {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: var(--ai-transition);
+  text-decoration: none;
+}
+
+.ai-action-base:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ai-hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ai-hero-action {
+  composes: ai-action-base;
+}
+
+.ai-hero-action.brand {
+  background: var(--ai-gradient-1);
+  color: white;
+}
+
+.ai-hero-action.alt {
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+}
+
+.ai-features {
+  composes: ai-card-base;
+  padding: 4rem 0;
+  margin: 2rem 0;
+}
+
+.ai-introduction {
+  composes: ai-card-base;
+  padding: 4rem 2rem;
+  margin: 3rem 0;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.ai-updates-section {
+  composes: ai-card-base;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+.ai-footer {
+  composes: ai-card-base;
+  padding: 3rem 0;
+  border-top: 1px solid var(--vp-c-divider);
+  margin-top: 6rem;
 }
 </style>

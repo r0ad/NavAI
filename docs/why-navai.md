@@ -10,7 +10,7 @@ useAILayout: false
 
 ## 我们的优势
 
-<AIGrid columns="4">
+<AIGrid columns="3">
   <AICard
     title="快速上手"
     description="精简的教程和指南，帮助你迅速掌握AI工具的核心功能"
@@ -29,12 +29,7 @@ useAILayout: false
     icon="🌐"
     iconColor="var(--ai-accent-2)"
   />
-  <AICard
-    title="社区支持"
-    description="加入我们的社区，与其他AI爱好者交流经验和心得"
-    icon="👥"
-    iconColor="var(--ai-accent-1)"
-  />
+  
 </AIGrid>
 
 ## 如何开始
@@ -43,13 +38,9 @@ useAILayout: false
 2. **学习提示词**：掌握有效的提示词技巧，提高与 AI 模型的交互效率
 3. **构建智能体**：根据自己的需求，定制专属的 AI 智能体，实现自动化任务处理
 
-## 加入我们
-
-NavAI 是一个开源项目，我们欢迎所有对 AI 感兴趣的朋友加入我们，一起构建更好的 AI 导航平台。你可以通过以下方式参与：
-
-- 在 [GitHub](https://github.com/r0ad/NavAI) 上提交 Issue 或 Pull Request
-- 分享你的 AI 使用经验和技巧
-- 推荐优质的 AI 工具和资源
+<div class="ai-features">
+  <AINavGrid />
+</div>
 
 <div class="ai-cta-section">
   <h3>准备好探索 AI 的无限可能了吗？</h3>

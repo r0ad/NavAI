@@ -1,0 +1,66 @@
+/* 导航栏样式定制 */
+.VPNav {
+  background-color: var(--vp-nav-bg-color);
+  backdrop-filter: saturate(50%) blur(8px);
+}
+
+/* 导航容器样式 */
+.VPNavBar.has-sidebar .container {
+  max-width: var(--vp-layout-max-width) !important;
+  margin: 0 auto;
+  padding: 0 var(--vp-layout-padding);
+}
+
+/* Logo样式 */
+.VPNavBar .logo {
+  height: 32px;
+  padding: 4px 0;
+}
+
+/* 导航菜单项样式 */
+.VPNavBar .VPNavBarMenu {
+  display: flex;
+  align-items: center;
+}
+
+.VPNavBar .VPNavBarMenu .VPNavBarMenuLink {
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+  transition: color 0.25s;
+  white-space: nowrap;
+}
+
+.VPNavBar .VPNavBarMenu .VPNavBarMenuLink:hover,
+.VPNavBar .VPNavBarMenu .VPNavBarMenuLink.active {
+  color: var(--vp-c-brand-1);
+}
+
+/* 移动端菜单按钮样式 */
+.VPNavBar .VPNavBarHamburger {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* 导航栏阴影效果 */
+.VPNav.has-sidebar {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .VPNavBar.has-sidebar .container {
+    padding: 0 1rem;
+  }
+
+  .VPNavBar .VPNavBarMenu {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPNavBar.has-sidebar .container {
+    padding: 0 2rem;
+  }
+}

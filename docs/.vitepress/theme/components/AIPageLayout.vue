@@ -82,9 +82,11 @@ const next = computed(() => {
 
 <style scoped>
 .ai-page-layout {
-  padding: 0 1.5rem;
-  max-width: 1100px;
+  padding: 0 var(--vp-layout-padding);
+  max-width: var(--vp-layout-max-width);
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ai-page-header {
@@ -195,12 +197,17 @@ const next = computed(() => {
 }
 
 @media (max-width: 640px) {
+  .ai-page-layout {
+    padding: 0 1rem;
+  }
+
   .ai-page-header h1 {
     font-size: 2rem;
   }
 
   .ai-page-description {
     font-size: 1rem;
+    padding: 0;
   }
 
   .ai-page-nav {
@@ -210,6 +217,12 @@ const next = computed(() => {
 
   .ai-page-nav-item {
     max-width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  .ai-page-layout {
+    padding: 0 2rem;
   }
 }
 </style>

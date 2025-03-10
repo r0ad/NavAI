@@ -68,6 +68,19 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
+
+  /* 布局相关变量 */
+  --vp-layout-max-width: 1440px;
+  --vp-layout-padding: 1.5rem;
+
+  /* 导航相关变量 */
+  --vp-nav-height: 64px;
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.95);
+  --vp-nav-screen-min-width: 768px;
+}
+
+.dark {
+  --vp-nav-bg-color: rgba(36, 36, 36, 0.95);
 }
 
 /**
@@ -92,17 +105,9 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
 
@@ -136,4 +141,3 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
-
