@@ -102,25 +102,6 @@
   box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
-/* 导航栏样式 */
-.VPNav {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.dark .VPNav {
-  background-color: rgba(30, 41, 59, 0.8);
-}
-
-/* Logo动画 */
-.VPNavBarTitle .logo {
-  transition: var(--ai-transition);
-}
-
-.VPNavBarTitle:hover .logo {
-  transform: rotate(15deg);
-}
-
 /* 自定义动画 */
 @keyframes float {
   0% {
